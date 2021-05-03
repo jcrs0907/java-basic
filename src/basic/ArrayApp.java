@@ -72,6 +72,8 @@ public class ArrayApp {
 		System.out.println("30~60 범위의 요소 갯수 = "+count);
 		System.out.println("-------------------------------------------");
 		
+	
+		
 	}
 
 }
