@@ -27,7 +27,7 @@ public class Test5 {
 		System.out.println(str);
 		
 		
-		
+		sc.close();
 		
 
 	}

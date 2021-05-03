@@ -58,7 +58,7 @@ public class Test6 {
 		System.out.println("do-while"+ dan+"*"+k+"="+(dan*k));
 	}while(k<9);
 	
-	
+	sc.close();
 	
 	
 	

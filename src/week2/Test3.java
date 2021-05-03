@@ -26,6 +26,8 @@ public class Test3 {
 		mat = sc.nextInt();
 		
 		System.out.print(name + (kor+eng+mat)+"Á¡");
+		
+		sc.close();
 	}
 
 }

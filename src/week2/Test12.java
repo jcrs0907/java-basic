@@ -74,6 +74,7 @@ public class Test12 {
 		
 		System.out.println("--------------------------");
 	
+		sc.close();
 	}
 
 }

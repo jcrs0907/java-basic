@@ -33,7 +33,7 @@ public class Test11 {
 		System.out.println(a);//20
 		
 		
-
+		sc.close();
 	}
 
 }

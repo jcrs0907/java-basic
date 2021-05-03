@@ -26,7 +26,7 @@ public class Test9 {
 			System.out.println("숫자 입력 오류");	
 			break;
 		}
-
+		sc.close();
 	}
 
 }
