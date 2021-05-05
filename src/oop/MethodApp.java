@@ -12,7 +12,7 @@ public class MethodApp {
 		//-> 클래스명 참조변수 : 클래스로 생성된 객체의 정보를 저장하기 위한 참조변수 생성
 		//-> 참조변수를 이용하여 저장된 객체 객체의 필드 또는 메소드에 접근하여 사용
 		//Method method = new Method(); //동일 패키지의 클래스는 패키지 명시 생략 가능
-		oop.Method method = new Method(); 
+		oop.Method method = new Method();//new Method는 객체
 		System.out.println("method = " + method);
 		System.out.println("=================================================================");
 		
@@ -60,8 +60,33 @@ public class MethodApp {
 		}
 		
 		System.out.println("=================================================================");
-
+		String nameResult = method.nameHello("홍길동");//클래스.매소드
+		System.out.println(nameResult);
+		System.out.println(method.nameHello("임꺽정"));
 		
+		System.out.println("=================================================================");
+		//배열을 반환
+		int[] num = method.returnArray();
+		System.out.print("반환된 요소값>>");
+		
+		for(int temp:num) {
+			System.out.println(temp);
+		}
+		
+		System.out.println("------------------------------------------------");
+		
+		System.out.println("합계 ="+ method.sumOne(3,4,6));
+
+		System.out.println("------------------------------------------------");
+		System.out.println("합계는"+ method.sumTwo(new int[] {10,20,30}));
+		System.out.println("합계는"+ method.sumTwo(new int[] {10,20,30,40,50}));
+		//배열요소의 갯수를 자유롭게 입력
+		System.out.println("합계는"+ method.sumThree());
+		System.out.println("합계는"+ method.sumThree(10,20));
+	
+		System.out.println("합계는"+ method.sumThree(10,20,50));
+		System.out.println("------------------------------------------------");
+
 	}
 
 }

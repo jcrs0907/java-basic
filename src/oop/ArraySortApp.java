@@ -16,6 +16,7 @@ public class ArraySortApp {
 		
 		System.out.println();
 		
+		//절차 지향 프로그래밍의 예시
 		//배열의 요소값들을 선택 정렬 알고리즘을 이용하여 오름차순 정렬 처리
 		for(int i=0; i<array.length-1; i++) {//비교 요소의 첨자 : 처음~마지막-1
 			for(int j=i+1; j<array.length; j++) {//피비교 요소의 첨자 : 비교+1~마지막

@@ -83,4 +83,51 @@ public class Method {
 			return true;
 		}
 	}
+	
+	//매개변수로 객체를 전달 받거나 객체 반환이 가능하다
+	String nameHello(String name) {//객체 전달받아 저장
+		return name+"님. 안녕하세요.";
+	}
+	
+	//배열의 해시코드를 반환하는 메서드
+	//배열의 모든 요소값 반환
+	int[] returnArray() {
+		/*
+		int[] array = {10,20,30,40,50};
+		return array;
+		*/
+		
+		//return {10,20,30,40,50};//값의 나열이고 배열이 아님
+		return new int[]{10,20,30,40,50}; //배열로 반환
+	}
+	
+	//3개의 매개변수에 정수값을 전달 받아 합계를 계산하여 반환하는 메소드
+	int sumOne(int num1, int num2, int num3) {
+		return num1 + num2 + num3;
+	}
+	
+	//매개변수로 배열을 전달받아 배열 요소값의 합계를 계산하여 반환하는 메소드
+	int sumTwo(int[] num) {//매개 변수로 배열 사용
+		int tot = 0;
+		for(int temp:num) {
+			tot += temp;//배열 요소들의 합계를 계산
+		}
+		return tot;
+	}
+	
+	
+	//매개 변수 생략 기호(...)를 사용한 매개변수 선언한 경우 값을 0개 이상 전달받아
+	//배열 형식으로 사용 가능
+	int sumThree(int... num) {//매개 변수의 갯수를 생략
+		int tot = 0;
+		for(int temp:num) {
+			tot += temp;//배열 요소들의 합계를 계산
+		}
+		return tot;
+	}
+	
+	
+	
+	
+	
 }
