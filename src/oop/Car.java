@@ -85,7 +85,7 @@ public class Car {
 	//은닉화 선언된 필드를 위해 필드값을 반환하는 Getter 메소드와 필드값을 변경하는 
 	//Setter 메소드 선언 >> 캡슐화 
 	//캡슐화(Getter & Setter) 메소드 자동 생성 단축키
-	//[Alt]+[Shift]+[S] >> 팝업메뉴 >> [R] >> 생성 메뉴 >> 필드 선택 >> Generate 
+	//[Alt]+[Shift]+[S] >> 팝업 메뉴 >> [R] >> 생성 메뉴 >> 필드 선택 >> Generate 
 	public String getAliasName() {//Getter 메소드 - 메소드명 : get필드명
 		return aliasName;//필드값 반환
 	}
