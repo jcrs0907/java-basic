@@ -1,4 +1,4 @@
-package week1;
+package com.week1;
 //BufferedReader를 메모리 상에 올려라
 import java.io.BufferedReader;
 import java.io.IOException;

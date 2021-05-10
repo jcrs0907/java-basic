@@ -1,4 +1,4 @@
-package week1;
+package com.week1;
 
 //public 접근제어자(public : 접근에 제한이 없음)
 public class Test1 {

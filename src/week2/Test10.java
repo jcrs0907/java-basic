@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -39,8 +39,6 @@ public class Test10 {
 			System.out.printf("%d%c%d=%d\n",num1,oper,num2,(num1/num2));
 			break;
 		}
-		
-		sc.close();
 
 	}
 

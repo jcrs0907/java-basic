@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -32,8 +32,6 @@ public class Test2 {
 		}
 		
 		System.out.println(name+":"+pan);
-		
-		sc.close();
 	}
 
 }

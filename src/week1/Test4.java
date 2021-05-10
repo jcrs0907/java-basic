@@ -1,4 +1,4 @@
-package week1;
+package com.week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class Test4 {
 		double area, length;
 		
 		//입력
-		System.out.println("반지름?");
+		System.out.println("반지름?");//20 문자로 읽어서 돌려줌
 		
 		//readLine()은 입력값으로 들어온 데이터를 한 줄로 읽어서 String으로 바꾸는 메소드
 		//정수형 입력이라면, 형변환 필수!

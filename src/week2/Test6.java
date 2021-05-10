@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -38,7 +38,7 @@ public class Test6 {
 	
 	System.out.println("\n------------------------------\n");
 	
-	int e=0;
+	int e=0;//배열에서 주로 0부터 사용(인덱스)
 	while(e<9) {
 		e++;
 		System.out.println("while"+ dan+"*"+e+"="+(dan*e));
@@ -58,7 +58,7 @@ public class Test6 {
 		System.out.println("do-while"+ dan+"*"+k+"="+(dan*k));
 	}while(k<9);
 	
-	sc.close();
+	
 	
 	
 	

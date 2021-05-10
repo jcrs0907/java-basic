@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class Test9 {
 			System.out.println("숫자 입력 오류");	
 			break;
 		}
-		sc.close();
+
 	}
 
 }

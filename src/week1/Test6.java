@@ -1,4 +1,4 @@
-package week1;
+package com.week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,7 +30,7 @@ public class Test6 {
 		
 		System.out.println("면적:" + area);
 		//더블을 받을 때 %g
-		System.out.printf("면적: %g", area);
+		System.out.printf("면적: %g", area);//area가 float이기 때문에 %g, %f 둘 다 사용가능
 		
 	}
 

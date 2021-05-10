@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -13,7 +13,6 @@ public class Test11 {
 		
 		System.out.print("다섯개의 정수?");// 4 6 2 8 9
 		
-		
 		for(int i=0; i<num.length; i++) {
 			num[i] = sc.nextInt();
 		}
@@ -23,6 +22,8 @@ public class Test11 {
 		for(int su : num) {//확장 for문 배열에서만 사용 가능
 			System.out.println(su);
 		}
+		System.out.println();
+		
 		
 		//num 3의 값을 변경
 		num[3] = 400;
@@ -33,7 +34,7 @@ public class Test11 {
 		System.out.println(a);//20
 		
 		
-		sc.close();
+
 	}
 
 }

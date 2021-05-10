@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -23,6 +23,9 @@ public class Test12 {
 			System.out.print("월?");//5
 			m = sc.nextInt();
 		}while(m<1||m>12);
+		
+		
+		//일을 받아서 요일 계산하기
 		
 		//윤년에 따른 2월달의 날수 계산
 		if(y%4==0 && y%100!=0 || y%400!=0) {
@@ -74,7 +77,6 @@ public class Test12 {
 		
 		System.out.println("--------------------------");
 	
-		sc.close();
 	}
 
 }

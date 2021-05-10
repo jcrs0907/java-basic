@@ -1,4 +1,4 @@
-package week1;
+package com.week1;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ public class Test8 {
 		//System.out.println(ch);
 		//System.out.println(Integer.toString(ch));
 		
-		result = ch>=65 && ch <= 90 ? (char)(ch+32) :  (ch>='a'&&ch<='z'?(char)(ch-32):ch);
+		result = ch>=65 && ch <= 90 ? (char)(ch+32) : (ch>='a'&&ch<='z'?(char)(ch-32):ch);
 		
 		System.out.println(ch+" : "+result);
 	}

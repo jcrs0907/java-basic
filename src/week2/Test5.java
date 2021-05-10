@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class Test5 {
 		System.out.println(str);
 		
 		
-		sc.close();
+		
 		
 
 	}

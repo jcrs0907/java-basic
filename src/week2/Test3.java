@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -26,8 +26,6 @@ public class Test3 {
 		mat = sc.nextInt();
 		
 		System.out.print(name + (kor+eng+mat)+"Á¡");
-		
-		sc.close();
 	}
 
 }

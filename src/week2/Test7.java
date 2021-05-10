@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -38,7 +38,7 @@ public class Test7 {
 		}
 		
 		
-		sc.close();
+		
 		
 		
 		

@@ -1,4 +1,4 @@
-package week2;
+package com.week2;
 
 import java.util.Scanner;
 
@@ -39,7 +39,6 @@ public class Test4 {
 		}
 		
 		System.out.printf("°á°ú: %d %d %d\n",num1,num2,num3);
-		sc.close();
 
 	}
 
