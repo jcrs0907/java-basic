@@ -1,4 +1,4 @@
-package com.score;
+package score;
 
 import java.util.Scanner;
 

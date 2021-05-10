@@ -1,6 +1,6 @@
-package com.week2;
+package week2;
 
-import com.week3.Rect;
+import week3.Rect;
 
 public class Test14 {
 

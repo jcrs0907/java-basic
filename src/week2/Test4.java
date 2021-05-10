@@ -1,5 +1,4 @@
-package com.week2;
-
+package week2;
 import java.util.Scanner;
 
 public class Test4 {

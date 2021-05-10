@@ -1,4 +1,4 @@
-package com.score;
+package score;
 
 public class Record {
 	String name;

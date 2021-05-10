@@ -1,4 +1,4 @@
-package com.week1;
+package week1;
 
 public class Test3 {
 	//class안에는 반드시 메서드가 있어야 한다

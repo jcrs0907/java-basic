@@ -1,4 +1,4 @@
-package com.week3;
+package week3;
 //같은 패키지에 있으면 import 하지 않아도 된다.
 public class Test1 {
 	public static void main(String[] args) {

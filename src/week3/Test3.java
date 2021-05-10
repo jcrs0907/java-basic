@@ -1,4 +1,4 @@
-package com.week3;
+package week3;
 
 class SubClass{
 	int a, b; //인스턴스 변수
