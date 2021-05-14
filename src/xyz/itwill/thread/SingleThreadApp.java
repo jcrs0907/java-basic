@@ -5,6 +5,7 @@ package xyz.itwill.thread;
 //=> main() 메소드가 종료되면 main 스레드 자동 소멸 - 프로그램 종료
 public class SingleThreadApp {
 	public static void main(String[] args) {
+		/*
 		System.out.println("SingleThreadApp 클래스의 main() 메소드 시작");
 		
 		//Thread.currentThread(): 현재 명령을 실행하는 Thread 인스턴스를 반환하는 메서드
@@ -17,6 +18,18 @@ public class SingleThreadApp {
 		
 		new SingleThread().display();
 		
-		System.out.println("SingleThreadApp 클래스의 main() 메소드 종료");	
+		System.out.println("SingleThreadApp 클래스의 main() 메소드 종료");
+		*/
+		
+		for(char i='A'; i<='Z'; i++) {
+			System.out.println(i);
+		}
+		
+		new SingleThread().display();
+		
+		
+		for(char i='A'; i<='Z'; i++) {
+			System.out.println(i);
+		}
 	}
 }
