@@ -16,6 +16,7 @@ class Super1{
 		System.out.println(title+" : "+area);
 		//System.out.println(r);
 	}
+	
 }
 
 class Cir extends Super1{
@@ -61,6 +62,7 @@ public class Test10 {
 		Rec ob1 = new Rec();
 		ob1.rectArea(100, 200);
 		ob1.write();
+	
 	}
 
 }
