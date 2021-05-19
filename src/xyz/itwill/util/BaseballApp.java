@@ -99,11 +99,3 @@ public class BaseballApp {
 		scanner.close();
 	}
 }
-
-
-
-
-
-
-
-

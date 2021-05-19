@@ -11,7 +11,7 @@ public class CalendarApp {
 		
 		//Calendar.toString() : Calendar 인스턴스에 저장된 날짜와 시간정보를 문자열로 
 		//변환하여 반환하는 메소드
-		System.out.println("now.toString() = "+now.toString());
+		//System.out.println("now.toString() = "+now.toString());
 		System.out.println("now = "+now);
 		
 		String[] day={"일","월","화","수","목","금","토"};
