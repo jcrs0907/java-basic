@@ -22,6 +22,7 @@ public class ListApp {
 		//List.toString() : List 인스턴스에 저장된 모든 요소를 문자열로 변환하여 반환하는 메소드
 		//System.out.println("list.toString() = "+list.toString());
 		System.out.println("list = "+list);
+		System.out.println("list = "+list.toString());
 		System.out.println("===============================================");
 		list.add("임꺽정");
 		System.out.println("list = "+list);
