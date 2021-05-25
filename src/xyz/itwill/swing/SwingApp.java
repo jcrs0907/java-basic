@@ -102,8 +102,8 @@ public class SwingApp extends JFrame {
 		field.addActionListener(new ActionEventHandler());
 		
 		//JFrame.setDefaultCloseOperation(int operation) : 프레임의 [닫기] 버튼을 누른 경우
-		//동작되는 기능에 대한 종료 옵션을 변경하는 메소드
-		//[닫기] 버튼을 누른 경우 동작되는 기능에 대한 종료 옵션 - 상수 사용
+		//동작되는 기능에 대한 종료 조작옵션을 변경하는 메소드
+		//[닫기] 버튼을 누른 경우 동작되는 기능에 대한 종료 조작옵션 - 상수 사용
 		// => WindowConstants.DO_NOTHING_ON_CLOSE : 아무런 동작도 발생되지 않도록 설정
 		// => WindowConstants.HIDE_ON_CLOSE : 프레임을 숨기도록 설정(기본)
 		// => WindowConstants.DISPOSE_ON_CLOSE : 메모리 정리 후 프로그램이 종료되도록 설정
@@ -135,17 +135,15 @@ public class SwingApp extends JFrame {
 				blue.setEnabled(true);
 				black.setEnabled(true);
 				
+				((JButton)eventSource).setEnabled(false);
+				
 				if(eventSource==red) {
-					red.setEnabled(false);
 					area.setForeground(Color.RED);
 				} else if(eventSource==green) {
-					green.setEnabled(false);
 					area.setForeground(Color.GREEN);
 				} else if(eventSource==blue) {
-					blue.setEnabled(false);
 					area.setForeground(Color.BLUE);
 				} else if(eventSource==black) {
-					black.setEnabled(false);
 					area.setForeground(Color.BLACK);
 				}
 			} else if(eventSource instanceof JTextField) {
