@@ -226,19 +226,14 @@ public class PenguinGameApp extends JFrame {
 					
 					//펭귄 출력 좌표값과 돌멩이 출력 좌표값을 비교하여 중복될 경우
 					//펭귄의 상태를 죽음상태로 변경
-					if(stoneY + 20 >= penguinY) {//Y 좌표값 비교
-						if(stoneX+10>=penguinX && stoneX + 10 <= penguinX + PENGUIN_SIZE
-								& stoneX+20>=penguinX && stoneX + 20 <= penguinX + PENGUIN_SIZE) {//x좌표값 비교
-							isPenguinAlive = false;
-							
+					if(stoneY+20>=penguinY) {//Y 좌표값 비교
+						if(stoneX+10>=penguinX && stoneX+10<=penguinX+PENGUIN_SIZE
+							& stoneX+20>=penguinX && stoneX+20<=penguinX+PENGUIN_SIZE) {//X 좌표값 비교
+							isPenguinAlive=false;
 							synchronized (stoneSet) {
-								for(Stone stone:stoneSet) {
-									stone.isStoneAlive=false;
-								}
 								stoneSet.clear();//콜렉션 필드 초기화
 							}
-							
-							repaint();
+							repaint();		
 						}
 					}
 				}
@@ -274,16 +269,3 @@ public class PenguinGameApp extends JFrame {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

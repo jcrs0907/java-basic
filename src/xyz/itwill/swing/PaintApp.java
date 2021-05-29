@@ -6,12 +6,12 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.JFrame;
 
-//프레임에서 마우스 버튼을 클릭하면 클릭한 위치의 좌표값을 문자열로 출력하는 프로그램
+//프레임에서 마우스 버튼을 클릭하면 클릭한 위치의 좌표값을 출력하는 프로그램
 public class PaintApp extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	//마우스 버튼을 클릭한 위치의 좌표값을 저장하기 위한 필드
-	private int x, y;
+	private int x, y;//private Point point;
 	
 	public PaintApp(String title) {
 		super(title);

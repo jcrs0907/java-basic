@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-//스레드 3개짜리 다중스레드 프로그램
+
 //날짜와 시간을 출력하는 GUI 프로그램
 public class DigitalClockApp extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -88,7 +88,6 @@ public class DigitalClockApp extends JFrame {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
 			}
 		}
 	}

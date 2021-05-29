@@ -4,18 +4,17 @@ import java.awt.Button;
 import java.awt.Frame;
 import java.awt.GridLayout;
 
-//GridLayout: 컴퍼넌트를 행과 열을 이용하여 배치하는 배치 관리자 클래스
-//=>행을 우선으로 컴퍼넌트 배치
-public class GridLayoutApp extends Frame{
+//GridLayout : 컴퍼넌트를 행과 열을 이용하여 배치하는 배치 관리자 클래스
+// => 행을 우선으로 컴퍼넌트 배치
+public class GridLayoutApp extends Frame {
 	private static final long serialVersionUID = 1L;
 
 	public GridLayoutApp(String title) {
 		super(title);
 		
-		
 		//프레임의 배치 관리자를 GridLayout으로 변경
-		//GridLayout 인스턴스는 행과 열을 설정하는 생성자로 인스턴스 생성
-		setLayout(new GridLayout(3,5));//3행 2열로 컴포넌트를 배치하겠다.
+		// => GridLayout 인스턴스는 행과 열을 설정하는 생성자로 인스턴스 생성
+		setLayout(new GridLayout(3, 2));
 		
 		Button button1=new Button("버튼-1");
 		Button button2=new Button("버튼-2");
@@ -31,8 +30,8 @@ public class GridLayoutApp extends Frame{
 		add(button5);
 		add(button6);
 		
-		setBounds(600,100,400,400);
-		setVisible(true);
+		setBounds(600, 100, 300, 400);
+		setVisible(true);		
 	}
 	
 	public static void main(String[] args) {

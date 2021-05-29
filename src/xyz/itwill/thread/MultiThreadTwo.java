@@ -1,11 +1,9 @@
 package xyz.itwill.thread;
 
 //Runnable 인터페이스를 상속받은 자식 클래스 - run() 메소드 오버라이드 선언
-public class MultiThreadTwo implements Runnable{
-
+public class MultiThreadTwo implements Runnable {
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		for(char i='a';i<='z';i++) {
 			System.out.print(i);
 			
@@ -16,7 +14,5 @@ public class MultiThreadTwo implements Runnable{
 				e.printStackTrace();
 			}
 		}
-		
 	}
-
 }

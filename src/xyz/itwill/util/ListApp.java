@@ -22,7 +22,6 @@ public class ListApp {
 		//List.toString() : List 인스턴스에 저장된 모든 요소를 문자열로 변환하여 반환하는 메소드
 		//System.out.println("list.toString() = "+list.toString());
 		System.out.println("list = "+list);
-		System.out.println("list = "+list.toString());
 		System.out.println("===============================================");
 		list.add("임꺽정");
 		System.out.println("list = "+list);
@@ -73,6 +72,7 @@ public class ListApp {
 		//Collections : List 인스턴스에 대한 요소 처리 기능을 제공하는 클래스
 		//Collections.sort(List list) : List 인스턴스를 전달받아 List 인스턴스의 요소를 정렬하는 메소드
 		Collections.sort(list);
+		
 		System.out.println("list = "+list);
 		System.out.println("===============================================");
 		//List.clear() : List 인스턴스에 저장된 모든 요소를 제거하여 초기화 처리하는 메소드

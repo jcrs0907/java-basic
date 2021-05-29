@@ -27,7 +27,7 @@ public class FrameOneApp {
 		//출력위치와 크기를 변경하는 메소드
 		f.setBounds(600, 100, 300, 400);
 		
-		//Frame.setResizable(boolean b) : 프레임의 크기 변경 여부를 설정하는 메소드
+		//Frame.setResizable(boolean b) : 프레인의 크기 변경 여부를 설정하는 메소드
 		// => false : 크기 변경 불가능, true : 크기 변경 가능(기본)
 		f.setResizable(false);
 		

@@ -1,7 +1,6 @@
 package xyz.itwill.util;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 //정규 표현식(Regular Expression) : Meta 문자, Escape 문자 등을 이용하여 일정한 규칙의 문자열을 표현하는 방법
@@ -31,13 +30,13 @@ import java.util.regex.Pattern;
 \메타문자 : 메타문자를 일반문자로 표현
 */
 
-//키보드로 입력된 문자열에 대하 검증 프로그램을 작성하세요.
+//키보드로 입력된 문자열에 대한 검증 프로그램을 작성하세요.
 // => 형식에 맞지 않은 문자열을 입력한 경우 프로그램 종료 - 유효성 검사
 public class ValidationApp {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		
-		
+		/*
 		System.out.print("아이디 입력 >> ");
 		String id=scanner.nextLine();
 		
@@ -76,9 +75,9 @@ public class ValidationApp {
 		}
 		
 		System.out.println("[메세지]형식에 맞는 아이디를 입력 하였습니다.");
+		*/
 		
-		
-		
+		/*
 		System.out.print("비밀번호 입력 >> ");
 		String password=scanner.nextLine();
 		
@@ -95,7 +94,7 @@ public class ValidationApp {
 		}
 		
 		System.out.println("[메세지]형식에 맞는 비밀번호를 입력 하였습니다.");
-	
+		*/
 		
 		System.out.print("이메일 입력 >> ");
 		String email=scanner.nextLine();
@@ -117,18 +116,4 @@ public class ValidationApp {
 		scanner.close();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
