@@ -31,7 +31,6 @@ public class TimeClientApp {
 			
 			//접속 종료
 			socket.close();
-			
 		} catch (IOException e) {
 			System.out.println("[에러]서버에 접속할 수 없습니다.");
 		}

@@ -11,7 +11,7 @@ public class SocketApp {
 		try {
 			//Socket(String host, int port) : Server 컴퓨터의 이름(IP 주소)과 활성화된
 			//Port 번호를 전달받아 인스턴스를 생성하는 생성자
-			// => Socket 생성 - 서버(Server) 접속
+			// => Socket 인스턴스 생성 - 서버(Server) 접속
 			// => UnknownHostException과 IOException 발생
 			Socket socket=new Socket("www.daum.net", 80);
 			

@@ -38,7 +38,7 @@ public class TimeServerApp {
 				Date date=new Date();
 				
 				//시스템의 날짜와 시간정보가 저장된 Date 인스턴스를 출력 스트림으로 전달
-				// => 클라이언트에게 Date 인스턴스 전달
+				// => 클라이언트에게 시스템의 날짜와 시간정보 전달
 				stream.writeObject(date);
 				*/
 				

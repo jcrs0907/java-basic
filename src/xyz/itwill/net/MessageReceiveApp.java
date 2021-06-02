@@ -3,7 +3,6 @@ package xyz.itwill.net;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.SocketException;
 
 //접속 컴퓨터에서 보내온 메세지를 전달받아 출력하는 UDP 기반의 네트워크 프로그램
 public class MessageReceiveApp {
