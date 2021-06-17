@@ -23,7 +23,7 @@ public class SelectStudentApp {
 			stmt=con.createStatement();
 			
 			String sql="select * from student order by no";
-			//Statement.executeQuert(String sql) : SQL 명령(SELECT)을 전달하는 메소드
+			//Statement.executeQuery(String sql) : SQL 명령(SELECT)을 전달하는 메소드
 			// => SELECT 명령을 실행하여 검색된 행을 ResultSet 인스턴스에 저장하여 반환
 			//ResultSet : 검색결과를 테이블(2차원 배열) 형식으로 저장한 인스턴스
 			// => ResultSet 인터페이스의 참조변수에 자식 클래스의 인스턴스를 반환받아 저장
@@ -41,11 +41,11 @@ public class SelectStudentApp {
 				// => ResultSet 커서 위치의 처리행이 없는 경우 반복문 종료
 				do {
 					//ResultSet 커서 위치의 처리행에 컬럼값을 반환받아 저장
-					//ResultSet.getXXX(int columnIndex) 또는 ResultSet.getXXX(int columnLabel)
+					//ResultSet.getXXX(int columnIndex) 또는 ResultSet.getXXX(String columnLabel)
 					// => ResultSet 커서 위치의 처리행에 컬럼값을 반환하는 메소드
 					// => XXX는 컬럼값을 반환받기 위한 Java 자료형을 표현
 					// => columnIndex : 검색대상에 대한 컬럼 위치값(Index : 1부터 1씩 증가되는 정수값)
-					// => columnLabel : 검색대상에 대한 컬럼명 또는 별칭
+					// => columnLabel : 검색대상에 대한 컬럼명 또는 별칭(ColumnAlias)
 					//int no=rs.getInt(1);
 					int no=rs.getInt("no");
 					String name=rs.getString("name");
@@ -80,5 +80,6 @@ public class SelectStudentApp {
 		}
 	}
 }
+
 
 

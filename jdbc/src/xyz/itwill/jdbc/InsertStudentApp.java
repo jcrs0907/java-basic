@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-//JDBC 프로그램을 작성하기 위한 JDBC Driver 관련 클래스가 포함된 라이브러리를 빌드 처리
+//JDBC 프로그램을 작성하기 위한 JDBC Driver 관련 클래스가 포함된 라이브러리를 프로젝트에 빌드 처리
 // => Oracle JDBC Driver : ojdbc6.jar
 
 //STUDENT 테이블 : 학번(숫자형-PRIMARY KEY),이름(문자형),전화번호(문자형),주소(문자형),생년월일(날짜형)
@@ -71,9 +71,9 @@ public class InsertStudentApp {
 			// => 조작행의 갯수(int) 반환 - SQLException 발생
 			//Statement.executeQuery(String sql): SELECT 명령을 서버에 전달하는 메소드
 			// => 검색행(ResultSet 인스턴스) 반환 - SQLException 발생
-			String sql="insert into student values(1000,'홍길동','010-4635-5123','서울시 강남구','1999-12-31')";
+			//String sql="insert into student values(1000,'홍길동','010-4635-5123','서울시 강남구','1999-12-31')";
 			//String sql="insert into student values(2000,'임꺽정','010-7841-8711','수원시 팔달구','2000-01-01')";
-			//String sql="insert into student values(3000,'전우치','010-2871-7888','인천시 월미구','1997-05-06')";
+			String sql="insert into student values(3000,'전우치','010-2871-7888','인천시 월미구','1997-05-06')";
 			int rows=stmt.executeUpdate(sql);
 			
 			//5.SQL 명령의 실행 결과를 처리 - 출력 또는 반환

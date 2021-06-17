@@ -75,28 +75,54 @@ public class ResultSetCursorApp {
 		while(rs.previous()) {
 			System.out.println(rs.getRow()+"행 : 학번 = "+rs.getInt("no")+", 이름 = "+rs.getString("name"));
 		}
+
+		ConnectionFactory.close(con, stmt, rs);
 		System.out.println("===============================================================");
+		con=ConnectionFactory.getConnection();
+
+		stmt=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		
+		//ResultSet 커서 위치의 행을 조작하고자 할 경우 SELECT 명령에서 검색대상으로 * 사용 불가능 
+		sql="select no,name,phone,address,birthday from student order by no";
+		rs=stmt.executeQuery(sql);
+		
+		/*
+		//ResultSet 인스턴스의 2번째 위치에 새로운 행을 삽입하고 테이블에 적용
+		rs.absolute(2);
+		
+		//ResultSet.moveToInsertRow() : ResultSet 커서 위치에 새로운 행을 삽입하여 생성하는 메소드
+		// => 삽입된 행 다음에 존재하는 기존 행은 자동으로 다음행으로 이동
+		rs.moveToInsertRow();
+		
+		//삽입된 새로운 행의 컬럼값을 변경 
+		//ResultSet.updateXXX(String columnLabel, XXX value) :  ResultSet 커서 위치의 
+		//처리행에 컬럼값을 변경하는 메소드 - XXX : Java 자료형
+		rs.updateInt("no", 4000);
+		rs.updateString("name", "일지매");
+		rs.updateString("phone", "010-7861-3132");
+		rs.updateString("address", "수원시 팔달구");
+		//rs.updateDate("birthday", new Date(100,11,20));//2000-12-20
+		rs.updateString("birthday", "2000-12-20 00:00:00.0");
+		
+		//ResultSet.insertRow() : 커서 위치에 행으로 테이블에 삽입하는 메소드
+		rs.insertRow();
+		*/
+		
+		/*
+		//ResultSet 인스턴스의 3번째 위치의 행을 삭제하고 테이블에 적용
+		rs.absolute(3);
+		
+		//ResultSet.deleteRow() : 커서 위치에 행으로 테이블의 행을 삭제하는 메소드
+		rs.deleteRow();
+		*/
+		
+		//ResultSet 인스턴스의 2번째 위치의 행에 이름을 [임걱정]으로 변경하여 테이블에 적용
+		rs.absolute(2);
+		rs.updateString("name", "임걱정");
+		
+		//ResultSet.deleteRow() : 커서 위치에 행으로 테이블의 행을 변경하는 메소드
+		rs.updateRow();
 		
 		ConnectionFactory.close(con, stmt, rs);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
