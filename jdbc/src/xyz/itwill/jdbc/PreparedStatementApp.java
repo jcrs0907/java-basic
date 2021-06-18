@@ -44,7 +44,7 @@ public class PreparedStatementApp {
 		//PreparedStatement.setXXX(int parameterIndex, XXX value) 
 		// => 원하는 위치의 InParameter에 Java 변수값을 전달하는 메소드
 		// => XXX는 Java 자료형을 표현하며 메소드는 InParameter의 갯수만큼 호출
-		String sql1="insert into student values(?,?,?,?,?)";
+		String sql1="insert into student values(?,?,?,?,?)";//?는 InParameter
 		PreparedStatement pstmt=con.prepareStatement(sql1);
 		pstmt.setInt(1, no);
 		pstmt.setString(2, name);
@@ -91,7 +91,7 @@ public class PreparedStatementApp {
 		
 		//InParameter는 Java 변수값을 무조건 SQL 명령의 값으로만 인식되어 처리
 		String sql="select * from student where name=? order by no";
-		PreparedStatement pstmt=con.prepareStatement(sql);
+		PreparedStatement pstmt=con.prepareStatement(sql);//sql 명령을 pstmt에 저장
 		pstmt.setString(1, name);
 		
 		ResultSet rs=pstmt.executeQuery();

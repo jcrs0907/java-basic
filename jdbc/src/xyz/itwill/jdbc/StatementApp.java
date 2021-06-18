@@ -37,7 +37,7 @@ public class StatementApp {
 		Connection con=ConnectionFactory.getConnection();
 		
 		Statement stmt=con.createStatement();
-		
+		//+연산자를 통해 결합해야된다
 		String sql1="insert into student values("+no+",'"+name+"','"
 				+phone+"','"+address+"','"+birthday+"')";
 		int rows=stmt.executeUpdate(sql1);
