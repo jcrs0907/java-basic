@@ -422,7 +422,6 @@ public class StudentGUIApp extends JFrame implements ActionListener {
 		} else {
 			JOptionPane.showMessageDialog(this, "삭제하고자 하는 학번의 학생정보가 없습니다.");
 		}
-
 		initDisplay();
 	}
 }

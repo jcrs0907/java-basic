@@ -17,7 +17,6 @@ public class PropertiesApp {
 		
 		//FileInputStream 클래스를 이용하여 입력 스트림 생성 - 파일 경로 관련 문제 발생
 		//FileInputStream in=new FileInputStream("src/xyz/itwill/dbcp/user.properties");
-		
 		//메모리에 저장된 클래스를 Class 인스턴스(clazz)로 제공받는 방법
 		//1.Class.forName(String class) : 문자열로 표현된 클래스를 메모리에 저장하고 Class 인스턴스 반환
 		//2.Object.getClass() : 현재 사용중인 클래스를 Class 인스턴스로 반환
