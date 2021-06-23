@@ -19,7 +19,7 @@ import java.util.List;
 public class StudentDAO extends JdbcDAO {
 	//싱글톤 디자인 패턴이 적용된 클래스 작성 방법
 	//1.클래스의 인스턴스를 저장하기 위한 참조필드 선언 - 시스템 필드
-	private static StudentDAO _dao;
+	private static StudentDAO _dao;	
 	
 	//2.생성자의 은닉화 선언 - 클래스 외부에서 생성자로 인스턴스 생성 불가능
 	private StudentDAO() {
@@ -46,7 +46,7 @@ public class StudentDAO extends JdbcDAO {
 	public int insertStudent(StudentDTO student) {
 		Connection con=null;
 		PreparedStatement pstmt=null;
-		int rows=0;
+		int rows=0;//SQL 명령의 실행 결과를 저장하기 위한 변수
 		try {
 			con=getConnection();
 			
@@ -75,7 +75,7 @@ public class StudentDAO extends JdbcDAO {
 		try {
 			con=getConnection();
 			
-			String sql="update student set name=?,phone=?,address=?,bithday=? where no=?";
+			String sql="update student set name=?,phone=?,address=?,birthday=? where no=?";
 			pstmt=con.prepareStatement(sql);
 			pstmt.setString(1, student.getName());
 			pstmt.setString(2, student.getPhone());
@@ -202,6 +202,7 @@ public class StudentDAO extends JdbcDAO {
 			
 			while(rs.next()) {
 				StudentDTO student=new StudentDTO();
+	
 				student.setNo(rs.getInt("no"));
 				student.setName(rs.getString("name"));
 				student.setPhone(rs.getString("phone"));

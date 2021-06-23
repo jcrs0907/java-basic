@@ -12,7 +12,6 @@ import oracle.ucp.jdbc.PoolDataSourceFactory;
 //JDBC 관련 인스턴스를 전달받아 제거하는 기능을 제공하는 클래스
 // => DBMS 관련 DAO 클래스에서 상속받아 사용하는 클래스
 public class JdbcDAO {
-	//_스코프 구분에 따른 표시
 	private static PoolDataSource _pds;
 	
 	static {
@@ -24,6 +23,7 @@ public class JdbcDAO {
 			_pds.setPassword("tiger");
 			_pds.setInitialPoolSize(3);
 			_pds.setMaxPoolSize(5);
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
