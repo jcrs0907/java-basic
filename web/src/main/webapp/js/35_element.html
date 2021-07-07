@@ -22,22 +22,23 @@
 	/*
 	//document.getElementById(id) : 태그의 id 속성값으로 태그를 검색하여 Element 객체로 반환하는 메소드
 	// => 태그 하나만을 검색하여 Element 객체로 반환
+	// => document 객체 대신에 Element 객체를 이용하여 태그 검색
 	var h2E=document.getElementById("h2");
 	//alert(h2E);//[object HTMLHeadingElement]
 	
 	//Element.nodeName : Element 객체의 노드명(태그명)을 저장한 프로퍼티
-	// => 노드(Node) : 태그내용을 포함하지 않는 태그
+	// => Node : 태그내용을 포함하지 않는 Element 객체
 	//alert(h2E.nodeName);//H2
 
 	//Element.nodeValue : Element 객체의 노드값(태그내용)을 저장한 프로퍼티
 	//alert(h2E.nodeValue);//null
 	
 	//Element.firstChild : Element 객체의 첫번째 자식 Element 객체를 저장한 프로퍼티
-	// => Text 객체 : 태그내용이 저장된 객체 - 태그명이 존재하지 않는 객체
+	// => Text 객체 : 태그내용만 저장된 객체 - TextNode
 	//alert(h2E.firstChild);//[object Text]
 	//alert(h2E.firstChild.nodeName);//#text
 	//alert(h2E.firstChild.nodeValue);//h2 태그의 내용
-	
+
 	//Text 객체의 태그내용(nodeValue 프로퍼티) 변경 - DOM 조작 : 응답결과 조작
 	h2E.firstChild.nodeValue="h2 태그의 내용 변경";
 	*/
@@ -45,6 +46,7 @@
 	/*
 	//document.getElementsByTagName(tagName) : 태그명으로 태그를 검색하여 Collection 객체
 	//(NodeList 객체 - Element 객체 그룹)로 반환하는 메소드
+	// => document 객체 대신에 Element 객체를 이용하여 태그 검색
 	var liList=document.getElementsByTagName("li");
 	//alert(liList);//[object HTMLCollection]
 	
