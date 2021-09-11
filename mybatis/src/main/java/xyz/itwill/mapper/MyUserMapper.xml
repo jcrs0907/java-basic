@@ -36,8 +36,8 @@
 	
 	<!-- 해결방법-2 : mybatis 환경설정파일(mybatis-config.xml)의 setting 엘리먼트로
 	[mapUnderscoreToCamelCase] 옵션값을 [true]로 변경 --> 
-	<!-- mapUnderscoreToCamelCase 옵션 : mybatis 실행시 스네이크 표기법의 식별자를 자동으로 
-	카멜 표기법의 식별자로 변환하는 기능을 제공하는 옵션 - 기본값 : false(비활성) -->
+	<!-- mapUnderscoreToCamelCase 옵션 : mybatis 실행시 검색행의 스네이크 표기법의 식별자를  
+	자동으로 카멜 표기법의 식별자로 변환하는 기능을 제공하는 옵션 - 기본값 : false(비활성) -->
 	<!-- 
 	<select id="selectUserList" resultType="MyUser">
 		select * from myuser order by user_id
