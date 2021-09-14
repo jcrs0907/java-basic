@@ -27,9 +27,11 @@ public class MessageObjectFactory {
 		MessageObject object=null;
 		switch(messageObject) {
 		case HELLO_MESSAGE: 
-			object=new HelloMessageObject();
+			object=new HelloMessageObject(); 
+			break;
 		case HI_MESSAGE: 
 			object=new HiMessageObject();
+			break;
 		}
 		return object;
 	}
