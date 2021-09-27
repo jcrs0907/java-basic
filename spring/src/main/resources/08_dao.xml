@@ -32,15 +32,18 @@
 	<bean class="xyz.itwill08.dao.StudentDAOImpl" id="studentDAO">
 		<property name="jdbcTemplate" ref="jdbcTemplate"/>
 	</bean>
+
+	<!-- StudentDAOImplTwo 클래스를 Spring Bean으로 등록 -->
+	<!-- => JdbcTemplate 클래스의 Spring Bean를 인젝션 처리 -->
+	<bean class="xyz.itwill08.dao.StudentDAOImplTwo" id="studentDAOImplTwo">
+		<property name="jdbcTemplate" ref="jdbcTemplate"/>
+	</bean>
+	
+	<!-- StudentServiceImpl 클래스를 Spring Bean으로 등록 -->
+	<!-- => StudentDAOImpl 클래스의 Spring Bean를 인젝션 처리 -->
+	<bean class="xyz.itwill08.dao.StudentServiceImpl" id="studentService">
+		<!-- <property name="studentDAO" ref="studentDAO"/> -->
+		<property name="studentDAO" ref="studentDAOImplTwo"/>
+	</bean>
+	
 </beans>
-
-
-
-
-
-
-
-
-
-
-

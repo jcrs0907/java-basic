@@ -72,19 +72,3 @@ public class AopAnnotationAdvice {
 		return object;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
