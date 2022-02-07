@@ -12,7 +12,7 @@ java8, oracle, eclipse, intelliJ, oracle developer, DBeaver
 
 ### 블로그 정리
 - JAVA - https://velog.io/@jcrs0907?tag=Java
-- oracle - https://velog.io/@jcrs0907?tag=oracle
+- ORACLE - https://velog.io/@jcrs0907?tag=oracle
 
 
 
