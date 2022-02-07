@@ -11,8 +11,8 @@ jsp, ajax, servlet, jdbc, mvc패턴, mybatis 등 개념 이해하기
 java8, oracle, eclipse, intelliJ, oracle developer, DBeaver
 
 ### 블로그 정리
-- [JAVA] - https://velog.io/@jcrs0907?tag=Java
-- [oracle] - https://velog.io/@jcrs0907?tag=oracle
+- JAVA - https://velog.io/@jcrs0907?tag=Java
+- oracle - https://velog.io/@jcrs0907?tag=oracle
 
 
 
